@@ -2,13 +2,17 @@
   "name": "glowup",
   "version": "2.0.0",
   "description": "GlowUp — Personality Development Platform",
-  "main": "server.js",
+  "private": true,
   "scripts": {
     "start": "node server.js",
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "vercel-build": "echo 'No build step needed'"
   },
   "dependencies": {
     "express": "^4.21.0",
     "cors": "^2.8.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
