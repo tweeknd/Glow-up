@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GlowUp — Your complete personality development platform. Master lookmaxing, optimize sleep, study smarter, and build your ideal physique.">
+    <title>GlowUp — Become Your Best Version</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+    <!-- Cursor glow follower -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="navbar" id="navbar">
+        <a href="#hero" class="nav-logo">
+            <span class="logo-icon">⚡</span>Glow<span class="logo-accent">Up</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#faceglow" data-section="faceglow">FaceGlow</a></li>
+            <li><a href="#sleepsync" data-section="sleepsync">SleepSync</a></li>
+            <li><a href="#brainboost" data-section="brainboost">BrainBoost</a></li>
+            <li><a href="#ironforge" data-section="ironforge">IronForge</a></li>
+            <li><a href="#metahack" data-section="metahack">MetaHack</a></li>
+            <li><a href="#stoicmind" data-section="stoicmind">StoicMind</a></li>
+            <li><a href="#digiclean" data-section="digiclean">DigiClean</a></li>
+        </ul>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="images/hero-bg.png" alt="" class="hero-bg-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content reveal">
+            <span class="hero-badge">🚀 Your Transformation Starts Here</span>
+            <h1 class="hero-title">Become Your <span class="gradient-text">Best Version</span></h1>
+            <p class="hero-subtitle">Master your looks, optimize sleep, study smarter, and forge an elite physique — all in one platform.</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="5">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Development Areas</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="30">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Expert Tips</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span>
+                    <span class="stat-label">Free Forever</span>
+                </div>
+            </div>
+            <div class="hero-actions">
+                <a href="#faceglow" class="btn btn-primary">Explore Modules <span class="btn-arrow">→</span></a>
+                <a href="#brainboost" class="btn btn-outline">Start Pomodoro Timer</a>
+            </div>
+        </div>
+
+        <!-- Hero Module Carousel -->
+        <div class="hero-carousel reveal" id="heroCarousel">
+            <button class="carousel-arrow carousel-prev" id="carouselPrev">‹</button>
+            <div class="carousel-track-wrapper">
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="carousel-card" data-goto="faceglow">
+                        <div class="carousel-card-icon" style="background: rgba(0,229,255,0.12); color: var(--cyan);">✨</div>
+                        <h4>FaceGlow</h4>
+                        <p>Skincare, mewing, jawline & grooming</p>
+                    </div>
+                    <div class="carousel-card" data-goto="sleepsync">
+                        <div class="carousel-card-icon" style="background: rgba(168,85,247,0.12); color: var(--purple);">🌙</div>
+                        <h4>SleepSync</h4>
+                        <p>Sleep cycles, circadian rhythm & recovery</p>
+                    </div>
+                    <div class="carousel-card" data-goto="brainboost">
+                        <div class="carousel-card-icon" style="background: rgba(245,158,11,0.12); color: var(--gold);">📖</div>
+                        <h4>BrainBoost</h4>
+                        <p>Pomodoro, active recall & study hacks</p>
+                    </div>
+                    <div class="carousel-card" data-goto="ironforge">
+                        <div class="carousel-card-icon" style="background: rgba(239,68,68,0.12); color: var(--red);">🏋️</div>
+                        <h4>IronForge</h4>
+                        <p>Workouts, meal plans & muscle building</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-arrow carousel-next" id="carouselNext">›</button>
+            <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+    </section>
+
+    <!-- ========== FACEGLOW (LOOKMAXING) ========== -->
+    <section class="section section-faceglow" id="faceglow">
+        <div class="section-bg-accent faceglow-accent"></div>
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">✨ Module 01</span>
+                <h2 class="section-title">Face<span class="gradient-text-cyan">Glow</span></h2>
+                <p class="section-desc">Unlock your facial aesthetics with proven lookmaxing techniques. From skincare to bone structure enhancement.</p>
+            </div>
+
+            <div class="faceglow-grid">
+                <div class="feature-image reveal reveal-left">
+                    <img src="images/faceglow.png" alt="FaceGlow Lookmaxing Guide">
+                    <div class="image-glow cyan"></div>
+                </div>
+                <div class="feature-cards">
+                    <div class="glass-card reveal" data-delay="100">
+                        <div class="card-icon cyan">🧊</div>
+                        <h3>Skincare Routine</h3>
+                        <p>Morning: Cleanser → Vitamin C Serum → Moisturizer → SPF 50.<br>Night: Double cleanse → Retinol → Niacinamide → Night Cream.</p>
+                        <div class="card-tag">Daily Routine</div>
+                    </div>
+                    <div class="glass-card reveal" data-delay="200">
+                        <div class="card-icon cyan">👅</div>
+                        <h3>Mewing Technique</h3>
+                        <p>Entire tongue on palate, lips sealed, teeth lightly touching. Practice 24/7 for jawline definition and midface improvement. Takes 6-12 months for visible results.</p>
+                        <div class="card-tag">Structure</div>
+                    </div>
+                    <div class="glass-card reveal" data-delay="300">
+                        <div class="card-icon cyan">💪</div>
+                        <h3>Jawline Exercises</h3>
+                        <p>Chew mastic gum (30 min/day each side). Chin tucks (3×15 reps). Neck curls for posture. Masseter muscle grows in 4-8 weeks.</p>
+                        <div class="card-tag">Exercise</div>
+                    </div>
+                    <div class="glass-card reveal" data-delay="400">
+                        <div class="card-icon cyan">💇</div>
+                        <h3>Grooming & Style</h3>
+                        <p>Find your face shape → get a complementary haircut. Maintain eyebrows (natural shape). Minoxidil for beard growth. Fresh breath & white teeth are non-negotiable.</p>
+                        <div class="card-tag">Appearance</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tip-banner reveal">
+                <span class="tip-icon">💡</span>
+                <p><strong>Pro Tip:</strong> Drink 3-4 liters of water daily. Hydration is the #1 underrated skincare secret. Your skin will literally glow within a week.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SLEEPSYNC ========== -->
+    <section class="section section-sleepsync" id="sleepsync">
+        <div class="section-bg-accent sleepsync-accent"></div>
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">🌙 Module 02</span>
+                <h2 class="section-title">Sleep<span class="gradient-text-purple">Sync</span></h2>
+                <p class="section-desc">Optimize your sleep for peak brain performance. Your body recovers, your brain consolidates, and your hormones reset — all while you sleep.</p>
+            </div>
+
+            <div class="sleepsync-layout">
+                <div class="sleep-calculator glass-card reveal" id="sleepCalc">
+                    <h3>⏰ Sleep Calculator</h3>
+                    <p>Enter your desired wake-up time to find ideal bedtimes based on 90-minute sleep cycles.</p>
+                    <div class="calc-input-group">
+                        <label for="wakeTime">Wake-up Time</label>
+                        <input type="time" id="wakeTime" value="06:00" class="calc-input">
+                    </div>
+                    <button class="btn btn-primary btn-full" id="calcSleepBtn">Calculate Bedtimes</button>
+                    <div class="calc-results" id="sleepResults">
+                        <p class="calc-hint">Click calculate to see recommended bedtimes</p>
+                    </div>
+                </div>
+
+                <div class="sleep-tips-grid">
+                    <div class="glass-card mini-card reveal" data-delay="100">
+                        <div class="card-icon purple">📵</div>
+                        <h4>No Screens</h4>
+                        <p>Stop all blue light exposure 1 hour before bed. Use night mode or blue light glasses if needed.</p>
+                    </div>
+                    <div class="glass-card mini-card reveal" data-delay="200">
+                        <div class="card-icon purple">🌡️</div>
+                        <h4>Cool Room</h4>
+                        <p>Keep bedroom at 18-20°C (65-68°F). Your body needs to cool down to initiate deep sleep.</p>
+                    </div>
+                    <div class="glass-card mini-card reveal" data-delay="300">
+                        <div class="card-icon purple">☀️</div>
+                        <h4>Morning Sunlight</h4>
+                        <p>Get 10-15 min of sunlight within 30 min of waking. Resets your circadian clock naturally.</p>
+                    </div>
+                    <div class="glass-card mini-card reveal" data-delay="400">
+                        <div class="card-icon purple">🧘</div>
+                        <h4>Wind-Down Ritual</h4>
+                        <p>Reading, stretching, or meditation before bed. Consistent routine signals brain to produce melatonin.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sleep-schedule reveal">
+                <h3>🔄 Ideal Sleep Architecture</h3>
+                <div class="schedule-bar">
+                    <div class="schedule-phase" style="width: 5%; background: var(--cyan);" data-tooltip="Awake → N1 (5 min)">N1</div>
+                    <div class="schedule-phase" style="width: 50%; background: var(--purple);" data-tooltip="Light Sleep — 50% of night">N2</div>
+                    <div class="schedule-phase" style="width: 20%; background: var(--indigo);" data-tooltip="Deep Sleep — Growth hormone release">N3</div>
+                    <div class="schedule-phase" style="width: 25%; background: var(--pink);" data-tooltip="REM — Memory consolidation & dreams">REM</div>
+                </div>
+                <div class="schedule-labels">
+                    <span>N1 (5%)</span> <span>N2 Light (50%)</span> <span>N3 Deep (20%)</span> <span>REM (25%)</span>
+                </div>
+            </div>
+
+            <div class="feature-image sleep-image reveal">
+                <img src="images/sleep.png" alt="SleepSync Guide">
+                <div class="image-glow purple"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== BRAINBOOST (STUDY) ========== -->
+    <section class="section section-brainboost" id="brainboost">
+        <div class="section-bg-accent brainboost-accent"></div>
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">📚 Module 03</span>
+                <h2 class="section-title">Brain<span class="gradient-text-gold">Boost</span></h2>
+                <p class="section-desc">Study smarter, not harder. Learn proven cognitive strategies used by top students and memory champions worldwide.</p>
+            </div>
+
+            <div class="brainboost-layout">
+                <!-- Pomodoro Timer -->
+                <div class="pomodoro glass-card reveal" id="pomodoroTimer">
+                    <h3>🍅 Pomodoro Timer</h3>
+                    <div class="pomo-display">
+                        <svg class="pomo-ring" viewBox="0 0 200 200">
+                            <circle class="pomo-ring-bg" cx="100" cy="100" r="90"/>
+                            <circle class="pomo-ring-progress" cx="100" cy="100" r="90" id="pomoRing"/>
+                        </svg>
+                        <div class="pomo-time" id="pomoTime">25:00</div>
+                        <div class="pomo-label" id="pomoLabel">Focus Time</div>
+                    </div>
+                    <div class="pomo-controls">
+                        <button class="btn btn-sm btn-outline" id="pomoStart">▶ Start</button>
+                        <button class="btn btn-sm btn-outline" id="pomoPause">⏸ Pause</button>
+                        <button class="btn btn-sm btn-outline" id="pomoReset">↺ Reset</button>
+                    </div>
+                    <div class="pomo-sessions">
+                        <span>Sessions: <strong id="pomoSessions">0</strong>/4</span>
+                        <span class="pomo-mode" id="pomoMode">🟢 Focus</span>
+                    </div>
+                </div>
+
+                <!-- Study Techniques -->
+                <div class="study-techniques">
+                    <div class="glass-card reveal" data-delay="100">
+                        <div class="card-icon gold">🧠</div>
+                        <h3>Active Recall</h3>
+                        <p>Close your notes and try to recall everything. Test yourself with questions. Retrieval practice strengthens neural pathways 3x more than re-reading.</p>
+                        <div class="card-tag">Memorization</div>
+                    </div>
+                    <div class="glass-card reveal" data-delay="200">
+                        <div class="card-icon gold">📊</div>
+                        <h3>Spaced Repetition</h3>
+                        <p>Review at increasing intervals: Day 1 → Day 3 → Day 7 → Day 14 → Day 30. Use Anki flashcards for automatic scheduling.</p>
+                        <div class="card-tag">Long-Term Memory</div>
+                    </div>
+                    <div class="glass-card reveal" data-delay="300">
+                        <div class="card-icon gold">👨‍🏫</div>
+                        <h3>Feynman Technique</h3>
+                        <p>Explain the concept as if teaching a 12-year-old. If you can't simplify it, you don't truly understand it. Fill knowledge gaps and repeat.</p>
+                        <div class="card-tag">Deep Understanding</div>
+                    </div>
+                    <div class="glass-card reveal" data-delay="400">
+                        <div class="card-icon gold">🗺️</div>
+                        <h3>Mind Mapping</h3>
+                        <p>Create visual connections between concepts. Central idea → branches → sub-branches. Color code topics. Great for subjects with interconnected themes.</p>
+                        <div class="card-tag">Visual Learning</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="study-schedule glass-card reveal">
+                <h3>📅 Optimal Study Schedule</h3>
+                <div class="schedule-table-wrapper">
+                    <table class="schedule-table">
+                        <thead>
+                            <tr>
+                                <th>Time Block</th>
+                                <th>Activity</th>
+                                <th>Duration</th>
+                                <th>Why It Works</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>6:00 - 6:30 AM</td><td>🧘 Morning Routine</td><td>30 min</td><td>Cortisol peak — prime alertness</td></tr>
+                            <tr><td>6:30 - 8:30 AM</td><td>📘 Deep Study Block 1</td><td>2 hrs</td><td>Peak cognitive performance window</td></tr>
+                            <tr><td>8:30 - 9:00 AM</td><td>☕ Break + Light Snack</td><td>30 min</td><td>Brain glucose replenishment</td></tr>
+                            <tr><td>9:00 - 11:00 AM</td><td>📗 Deep Study Block 2</td><td>2 hrs</td><td>Sustained focus after break</td></tr>
+                            <tr><td>11:00 - 12:00 PM</td><td>🏃 Exercise / Walk</td><td>1 hr</td><td>BDNF release — enhances memory</td></tr>
+                            <tr><td>2:00 - 4:00 PM</td><td>📙 Light Review / Practice</td><td>2 hrs</td><td>Post-lunch dip — use for easier tasks</td></tr>
+                            <tr><td>7:00 - 8:30 PM</td><td>📕 Active Recall Session</td><td>1.5 hrs</td><td>Spaced repetition before sleep</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="feature-image study-image reveal">
+                <img src="images/study.png" alt="BrainBoost Study Strategies">
+                <div class="image-glow gold"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== IRONFORGE (FITNESS) ========== -->
+    <section class="section section-ironforge" id="ironforge">
+        <div class="section-bg-accent ironforge-accent"></div>
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">🏋️ Module 04</span>
+                <h2 class="section-title">Iron<span class="gradient-text-red">Forge</span></h2>
+                <p class="section-desc">Build a powerful, aesthetic physique with structured workout plans, optimal nutrition, and progressive overload strategies.</p>
+            </div>
+
+            <!-- Workout Tabs -->
+            <div class="workout-section reveal">
+                <div class="tab-bar" id="workoutTabs">
+                    <button class="tab-btn active" data-tab="push">💪 Push (Mon)</button>
+                    <button class="tab-btn" data-tab="pull">🔙 Pull (Tue)</button>
+                    <button class="tab-btn" data-tab="legs">🦵 Legs (Wed)</button>
+                    <button class="tab-btn" data-tab="upper">🏗️ Upper (Fri)</button>
+                    <button class="tab-btn" data-tab="lower">🦿 Lower (Sat)</button>
+                </div>
+
+                <div class="tab-content active" id="tab-push">
+                    <div class="workout-grid">
+                        <div class="workout-item glass-card">
+                            <span class="exercise-num">01</span>
+                            <h4>Bench Press</h4>
+                            <p>4 sets × 8-10 reps</p>
+                            <span class="muscle-tag">Chest</span>
+                        </div>
+                        <div class="workout-item glass-card">
+                            <span class="exercise-num">02</span>
+                            <h4>Incline Dumbbell Press</h4>
+                            <p>3 sets × 10-12 reps</p>
+                            <span class="muscle-tag">Upper Chest</span>
+                        </div>
+                        <div class="workout-item glass-card">
+                            <span class="exercise-num">03</span>
+                            <h4>Overhead Press</h4>
+                            <p>4 sets × 8-10 reps</p>
+                            <span class="muscle-tag">Shoulders</span>
+                        </div>
+                        <div class="workout-item glass-card">
+                            <span class="exercise-num">04</span>
+                            <h4>Lateral Raises</h4>
+                            <p>4 sets × 15-20 reps</p>
+                            <span class="muscle-tag">Side Delts</span>
+                        </div>
+                        <div class="workout-item glass-card">
+                            <span class="exercise-num">05</span>
+                            <h4>Tricep Pushdowns</h4>
+                            <p>3 sets × 12-15 reps</p>
+                            <span class="muscle-tag">Triceps</span>
+                        </div>
+                        <div class="workout-item glass-card">
+                            <span class="exercise-num">06</span>
+                            <h4>Overhead Tricep Extension</h4>
+                            <p>3 sets × 12-15 reps</p>
+                            <span class="muscle-tag">Triceps</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="tab-pull">
+                    <div class="workout-grid">
+                        <div class="workout-item glass-card">
+                            <span class="exercise-num">01</span>
+                            <h4>Deadlift</h4>
+                            <p>4 sets × 5-6 reps</p>
+                            <span class="muscle-tag">Back / Posterior Chain</span>
+                        </div>
+                        <div class="workout-item glass-card">
+                            <span class="exercise-num">02</span>
+                            <h4>Barbell Rows</h4>
+                            <p>4 sets × 8-10 reps</p>
+                            <span class="muscle-tag">Upper Back</span>
+                        </div>
+                        <div class="workout-item glass-card">
+                            <span class="exercise-num">03</span>
+                            <h4>Pull-Ups</h4>
+                            <p>3 sets × max reps</p>
+                            <span class="muscle-tag">Lats</span>
+                        </div>
+                        <div class="workout-item glass-card">
+                            <span class="exercise-num">04</span>
+                            <h4>Face Pulls</h4>
+                            <p>4 sets × 15-20 reps</p>
+                            <span class="muscle-tag">Rear Delts</span>
+                        </div>
+                        <div class="workout-item glass-card">
+                            <span class="exercise-num">05</span>
+                            <h4>Barbell Curls</h4>
+                            <p>3 sets × 10-12 reps</p>
+                            <span class="muscle-tag">Biceps</span>
+                        </div>
+                        <div class="workout-item glass-card">
+                            <span class="exercise-num">06</span>
+                            <h4>Hammer Curls</h4>
+                            <p>3 sets × 12-15 reps</p>
+                            <span class="muscle-tag">Brachialis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="tab-legs">
+                    <div class="workout-grid">
+                        <div class="workout-item glass-card">
+                            <span class="exercise-num">01</span>
+                            <h4>Barbell Squats</h4>
+                            <p>4 sets × 6-8 reps</p>
+                            <span class="muscle-tag">Quads / Glutes</span>
+                        </div>
+                        <div class="workout-item glass-card">
+                            <span class="exercise-num">02</span>
+                            <h4>Romanian Deadlift</h4>
+                            <p>3 sets × 10-12 reps</p>
+                            <span class="muscle-tag">Hamstrings</span>
+                        </div>
+                        <div class="workout-item glass-card">
+                            <span class="exercise-num">03</span>
+                            <h4>Leg Press</h4>
+                            <p>3 sets × 12-15 reps</p>
+                            <span class="muscle-tag">Quads</span>
+                        </div>
+                        <div class="workout-item glass-card">
+                            <span class="exercise-num">04</span>
+                            <h4>Walking Lunges</h4>
+                            <p>3 sets × 12 each leg</p>
+                            <span class="muscle-tag">Quads / Glutes</span>
+                        </div>
+                        <div class="workout-item glass-card">
+                            <span class="exercise-num">05</span>
+                            <h4>Leg Curls</h4>
+                            <p>3 sets × 12-15 reps</p>
+                            <span class="muscle-tag">Hamstrings</span>
+                        </div>
+                        <div class="workout-item glass-card">
+                            <span class="exercise-num">06</span>
+                            <h4>Calf Raises</h4>
+                            <p>4 sets × 15-20 reps</p>
+                            <span class="muscle-tag">Calves</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="tab-upper">
+                    <div class="workout-grid">
+                        <div class="workout-item glass-card">
+                            <span class="exercise-num">01</span>
+                            <h4>Incline Bench Press</h4>
+                            <p>4 sets × 8-10 reps</p>
+                            <span class="muscle-tag">Upper Chest</span>
+                        </div>
+                        <div class="workout-item glass-card">
+                            <span class="exercise-num">02</span>
+                            <h4>Cable Rows</h4>
+                            <p>4 sets × 10-12 reps</p>
+                            <span class="muscle-tag">Mid Back</span>
+                        </div>
+                        <div class="workout-item glass-card">
+                            <span class="exercise-num">03</span>
+                            <h4>Dumbbell Shoulder Press</h4>
+                            <p>3 sets × 10-12 reps</p>
+                            <span class="muscle-tag">Shoulders</span>
+                        </div>
+                        <div class="workout-item glass-card">
+                            <span class="exercise-num">04</span>
+                            <h4>Lat Pulldowns</h4>
+                            <p>3 sets × 10-12 reps</p>
+                            <span class="muscle-tag">Lats</span>
+                        </div>
+                        <div class="workout-item glass-card">
+                            <span class="exercise-num">05</span>
+                            <h4>Cable Flyes</h4>
+                            <p>3 sets × 12-15 reps</p>
+                            <span class="muscle-tag">Chest</span>
+                        </div>
+                        <div class="workout-item glass-card">
+                            <span class="exercise-num">06</span>
+                            <h4>EZ Bar Curls + Dips</h4>
+                            <p>3 supersets × 12 reps each</p>
+                            <span class="muscle-tag">Arms</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="tab-lower">
+                    <div class="workout-grid">
+                        <div class="workout-item glass-card">
+                            <span class="exercise-num">01</span>
+                            <h4>Front Squats</h4>
+                            <p>4 sets × 8-10 reps</p>
+                            <span class="muscle-tag">Quads</span>
+                        </div>
+                        <div class="workout-item glass-card">
+                            <span class="exercise-num">02</span>
+                            <h4>Hip Thrusts</h4>
+                            <p>4 sets × 10-12 reps</p>
+                            <span class="muscle-tag">Glutes</span>
+                        </div>
+                        <div class="workout-item glass-card">
+                            <span class="exercise-num">03</span>
+                            <h4>Bulgarian Split Squats</h4>
+                            <p>3 sets × 10 each leg</p>
+                            <span class="muscle-tag">Quads / Glutes</span>
+                        </div>
+                        <div class="workout-item glass-card">
+                            <span class="exercise-num">04</span>
+                            <h4>Stiff Leg Deadlift</h4>
+                            <p>3 sets × 10-12 reps</p>
+                            <span class="muscle-tag">Hamstrings</span>
+                        </div>
+                        <div class="workout-item glass-card">
+                            <span class="exercise-num">05</span>
+                            <h4>Leg Extensions</h4>
+                            <p>3 sets × 15 reps</p>
+                            <span class="muscle-tag">Quads</span>
+                        </div>
+                        <div class="workout-item glass-card">
+                            <span class="exercise-num">06</span>
+                            <h4>Seated Calf Raises</h4>
+                            <p>4 sets × 20 reps</p>
+                            <span class="muscle-tag">Calves</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Meal Plan -->
+            <div class="meal-section reveal">
+                <h3 class="subsection-title">🍗 Muscle Building Meal Plan</h3>
+                <div class="tab-bar" id="mealTabs">
+                    <button class="tab-btn active" data-tab="bulk">Bulking (2800 cal)</button>
+                    <button class="tab-btn" data-tab="cut">Cutting (2000 cal)</button>
+                    <button class="tab-btn" data-tab="maintain">Maintenance (2400 cal)</button>
+                </div>
+
+                <div class="tab-content active" id="tab-bulk">
+                    <div class="meal-grid">
+                        <div class="meal-card glass-card">
+                            <span class="meal-time">6:30 AM</span>
+                            <h4>🌅 Meal 1 — Breakfast</h4>
+                            <ul>
+                                <li>4 whole eggs + 2 whites scrambled</li>
+                                <li>2 slices whole wheat toast</li>
+                                <li>1 banana + peanut butter</li>
+                                <li>Glass of milk</li>
+                            </ul>
+                            <div class="macro-bar">
+                                <span class="macro p">P: 40g</span>
+                                <span class="macro c">C: 65g</span>
+                                <span class="macro f">F: 30g</span>
+                            </div>
+                        </div>
+                        <div class="meal-card glass-card">
+                            <span class="meal-time">10:00 AM</span>
+                            <h4>🥤 Meal 2 — Snack</h4>
+                            <ul>
+                                <li>Protein shake (whey + milk)</li>
+                                <li>Handful of almonds (30g)</li>
+                                <li>1 apple or orange</li>
+                            </ul>
+                            <div class="macro-bar">
+                                <span class="macro p">P: 35g</span>
+                                <span class="macro c">C: 40g</span>
+                                <span class="macro f">F: 15g</span>
+                            </div>
+                        </div>
+                        <div class="meal-card glass-card">
+                            <span class="meal-time">1:00 PM</span>
+                            <h4>🍛 Meal 3 — Lunch</h4>
+                            <ul>
+                                <li>200g chicken breast / paneer</li>
+                                <li>1.5 cups brown rice</li>
+                                <li>Mixed veggie salad</li>
+                                <li>1 tbsp olive oil dressing</li>
+                            </ul>
+                            <div class="macro-bar">
+                                <span class="macro p">P: 50g</span>
+                                <span class="macro c">C: 75g</span>
+                                <span class="macro f">F: 15g</span>
+                            </div>
+                        </div>
+                        <div class="meal-card glass-card">
+                            <span class="meal-time">4:30 PM</span>
+                            <h4>💪 Meal 4 — Pre-Workout</h4>
+                            <ul>
+                                <li>Oats + banana smoothie</li>
+                                <li>1 scoop whey protein</li>
+                                <li>Coffee (black, 30 min before gym)</li>
+                            </ul>
+                            <div class="macro-bar">
+                                <span class="macro p">P: 30g</span>
+                                <span class="macro c">C: 55g</span>
+                                <span class="macro f">F: 8g</span>
+                            </div>
+                        </div>
+                        <div class="meal-card glass-card">
+                            <span class="meal-time">7:30 PM</span>
+                            <h4>🥩 Meal 5 — Post-Workout Dinner</h4>
+                            <ul>
+                                <li>200g grilled chicken / fish / tofu</li>
+                                <li>Sweet potato (200g)</li>
+                                <li>Steamed broccoli + spinach</li>
+                            </ul>
+                            <div class="macro-bar">
+                                <span class="macro p">P: 45g</span>
+                                <span class="macro c">C: 50g</span>
+                                <span class="macro f">F: 10g</span>
+                            </div>
+                        </div>
+                        <div class="meal-card glass-card">
+                            <span class="meal-time">9:30 PM</span>
+                            <h4>🌙 Meal 6 — Before Bed</h4>
+                            <ul>
+                                <li>Greek yogurt / paneer (200g)</li>
+                                <li>Mixed nuts (20g)</li>
+                                <li>Casein protein (optional)</li>
+                            </ul>
+                            <div class="macro-bar">
+                                <span class="macro p">P: 35g</span>
+                                <span class="macro c">C: 15g</span>
+                                <span class="macro f">F: 12g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="daily-totals glass-card">
+                        <h4>📊 Daily Totals</h4>
+                        <div class="totals-grid">
+                            <div class="total-item"><span class="total-val">2,800</span><span class="total-label">Calories</span></div>
+                            <div class="total-item"><span class="total-val protein">235g</span><span class="total-label">Protein</span></div>
+                            <div class="total-item"><span class="total-val carbs">300g</span><span class="total-label">Carbs</span></div>
+                            <div class="total-item"><span class="total-val fats">90g</span><span class="total-label">Fats</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="tab-cut">
+                    <div class="meal-grid">
+                        <div class="meal-card glass-card">
+                            <span class="meal-time">7:00 AM</span>
+                            <h4>🌅 Meal 1 — Breakfast</h4>
+                            <ul>
+                                <li>3 egg whites + 1 whole egg</li>
+                                <li>1 slice whole wheat toast</li>
+                                <li>Black coffee</li>
+                            </ul>
+                            <div class="macro-bar">
+                                <span class="macro p">P: 25g</span>
+                                <span class="macro c">C: 20g</span>
+                                <span class="macro f">F: 8g</span>
+                            </div>
+                        </div>
+                        <div class="meal-card glass-card">
+                            <span class="meal-time">12:00 PM</span>
+                            <h4>🍛 Meal 2 — Lunch</h4>
+                            <ul>
+                                <li>200g grilled chicken breast</li>
+                                <li>Large mixed salad</li>
+                                <li>100g brown rice</li>
+                            </ul>
+                            <div class="macro-bar">
+                                <span class="macro p">P: 50g</span>
+                                <span class="macro c">C: 45g</span>
+                                <span class="macro f">F: 8g</span>
+                            </div>
+                        </div>
+                        <div class="meal-card glass-card">
+                            <span class="meal-time">4:00 PM</span>
+                            <h4>🥤 Meal 3 — Pre-Workout</h4>
+                            <ul>
+                                <li>Protein shake with water</li>
+                                <li>1 apple</li>
+                            </ul>
+                            <div class="macro-bar">
+                                <span class="macro p">P: 30g</span>
+                                <span class="macro c">C: 30g</span>
+                                <span class="macro f">F: 2g</span>
+                            </div>
+                        </div>
+                        <div class="meal-card glass-card">
+                            <span class="meal-time">7:00 PM</span>
+                            <h4>🥩 Meal 4 — Dinner</h4>
+                            <ul>
+                                <li>200g fish / tofu</li>
+                                <li>Steamed veggies (broccoli, beans)</li>
+                                <li>100g sweet potato</li>
+                            </ul>
+                            <div class="macro-bar">
+                                <span class="macro p">P: 45g</span>
+                                <span class="macro c">C: 35g</span>
+                                <span class="macro f">F: 8g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="daily-totals glass-card">
+                        <h4>📊 Daily Totals</h4>
+                        <div class="totals-grid">
+                            <div class="total-item"><span class="total-val">2,000</span><span class="total-label">Calories</span></div>
+                            <div class="total-item"><span class="total-val protein">180g</span><span class="total-label">Protein</span></div>
+                            <div class="total-item"><span class="total-val carbs">160g</span><span class="total-label">Carbs</span></div>
+                            <div class="total-item"><span class="total-val fats">50g</span><span class="total-label">Fats</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="tab-maintain">
+                    <div class="meal-grid">
+                        <div class="meal-card glass-card">
+                            <span class="meal-time">7:00 AM</span>
+                            <h4>🌅 Meal 1 — Breakfast</h4>
+                            <ul>
+                                <li>3 whole eggs scrambled</li>
+                                <li>2 slices toast + avocado</li>
+                                <li>1 banana</li>
+                            </ul>
+                            <div class="macro-bar">
+                                <span class="macro p">P: 30g</span>
+                                <span class="macro c">C: 50g</span>
+                                <span class="macro f">F: 25g</span>
+                            </div>
+                        </div>
+                        <div class="meal-card glass-card">
+                            <span class="meal-time">10:00 AM</span>
+                            <h4>🥤 Meal 2 — Snack</h4>
+                            <ul>
+                                <li>Greek yogurt + berries</li>
+                                <li>Handful of walnuts</li>
+                            </ul>
+                            <div class="macro-bar">
+                                <span class="macro p">P: 20g</span>
+                                <span class="macro c">C: 25g</span>
+                                <span class="macro f">F: 12g</span>
+                            </div>
+                        </div>
+                        <div class="meal-card glass-card">
+                            <span class="meal-time">1:00 PM</span>
+                            <h4>🍛 Meal 3 — Lunch</h4>
+                            <ul>
+                                <li>180g chicken / paneer</li>
+                                <li>1 cup rice + dal</li>
+                                <li>Mixed salad</li>
+                            </ul>
+                            <div class="macro-bar">
+                                <span class="macro p">P: 45g</span>
+                                <span class="macro c">C: 60g</span>
+                                <span class="macro f">F: 12g</span>
+                            </div>
+                        </div>
+                        <div class="meal-card glass-card">
+                            <span class="meal-time">5:00 PM</span>
+                            <h4>💪 Meal 4 — Pre-Workout</h4>
+                            <ul>
+                                <li>Protein bar or shake</li>
+                                <li>1 banana</li>
+                            </ul>
+                            <div class="macro-bar">
+                                <span class="macro p">P: 25g</span>
+                                <span class="macro c">C: 35g</span>
+                                <span class="macro f">F: 8g</span>
+                            </div>
+                        </div>
+                        <div class="meal-card glass-card">
+                            <span class="meal-time">8:00 PM</span>
+                            <h4>🥩 Meal 5 — Dinner</h4>
+                            <ul>
+                                <li>200g grilled fish / chicken</li>
+                                <li>Quinoa or sweet potato</li>
+                                <li>Steamed veggies</li>
+                            </ul>
+                            <div class="macro-bar">
+                                <span class="macro p">P: 45g</span>
+                                <span class="macro c">C: 40g</span>
+                                <span class="macro f">F: 10g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="daily-totals glass-card">
+                        <h4>📊 Daily Totals</h4>
+                        <div class="totals-grid">
+                            <div class="total-item"><span class="total-val">2,400</span><span class="total-label">Calories</span></div>
+                            <div class="total-item"><span class="total-val protein">200g</span><span class="total-label">Protein</span></div>
+                            <div class="total-item"><span class="total-val carbs">240g</span><span class="total-label">Carbs</span></div>
+                            <div class="total-item"><span class="total-val fats">75g</span><span class="total-label">Fats</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-image fitness-image reveal">
+                <img src="images/fitness.png" alt="IronForge Fitness">
+                <div class="image-glow red"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== METAHACK (METABOLIC BIO-HACKING) ========== -->
+    <section class="section section-metahack" id="metahack">
+        <div class="section-bg-accent metahack-accent"></div>
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">🧬 Module 05</span>
+                <h2 class="section-title">Meta<span class="gradient-text-green">Hack</span></h2>
+                <p class="section-desc">Bio-hack your metabolism with intermittent fasting, autophagy activation, and nutrient-dense eating strategies.</p>
+            </div>
+
+            <div class="metahack-layout">
+                <!-- Fasting Tracker -->
+                <div class="fasting-tracker glass-card reveal">
+                    <h3>⏱️ Fasting Window Tracker</h3>
+                    <div class="fast-ring-container">
+                        <svg class="fast-ring" viewBox="0 0 200 200">
+                            <circle class="fast-ring-bg" cx="100" cy="100" r="85"/>
+                            <circle class="fast-ring-progress" cx="100" cy="100" r="85" id="fastRing"/>
+                        </svg>
+                        <div class="fast-ring-center">
+                            <span class="fast-time" id="fastTime">00:00:00</span>
+                            <span class="fast-status" id="fastStatus">Ready</span>
+                        </div>
+                    </div>
+                    <div class="fast-presets">
+                        <button class="fast-preset active" data-hours="16">16:8</button>
+                        <button class="fast-preset" data-hours="18">18:6</button>
+                        <button class="fast-preset" data-hours="20">20:4</button>
+                        <button class="fast-preset" data-hours="23">OMAD</button>
+                    </div>
+                    <div class="fast-controls">
+                        <button class="btn btn-primary btn-full" id="fastToggle">▶ Start Fast</button>
+                    </div>
+                    <div class="fast-stats">
+                        <div class="fast-stat"><span id="fastSessions">0</span><small>Sessions</small></div>
+                        <div class="fast-stat"><span id="fastStreak">0</span><small>Day Streak</small></div>
+                    </div>
+                </div>
+
+                <!-- Autophagy Timeline -->
+                <div class="autophagy-section">
+                    <h3 class="reveal">🔬 Autophagy Timeline</h3>
+                    <div class="autophagy-timeline reveal">
+                        <div class="autophagy-stage" data-delay="100">
+                            <div class="stage-marker" style="background: var(--green);"></div>
+                            <div class="stage-content">
+                                <h4>12 Hours — Fat Burning</h4>
+                                <p>Glycogen depleted. Body switches to fat as primary fuel. Ketone production begins.</p>
+                            </div>
+                        </div>
+                        <div class="autophagy-stage" data-delay="200">
+                            <div class="stage-marker" style="background: var(--cyan);"></div>
+                            <div class="stage-content">
+                                <h4>16 Hours — Autophagy Begins</h4>
+                                <p>Cells start recycling damaged components. mTOR pathway inhibited. Cellular cleanup accelerates.</p>
+                            </div>
+                        </div>
+                        <div class="autophagy-stage" data-delay="300">
+                            <div class="stage-marker" style="background: var(--purple);"></div>
+                            <div class="stage-content">
+                                <h4>24 Hours — Deep Autophagy</h4>
+                                <p>Growth hormone surges up to 2000%. Gut rest enables intestinal healing. BDNF increases.</p>
+                            </div>
+                        </div>
+                        <div class="autophagy-stage" data-delay="400">
+                            <div class="stage-marker" style="background: var(--gold);"></div>
+                            <div class="stage-content">
+                                <h4>48 Hours — Immune Reset</h4>
+                                <p>Stem cell regeneration triggered. Old immune cells recycled. Peak cellular renewal.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nutrient Scorecard -->
+                    <div class="nutrient-scorecard glass-card reveal">
+                        <h3>🥗 Nutrient Density Scorecard</h3>
+                        <p>Rate your meals (1-10 for nutrient density). Track your weekly average.</p>
+                        <div class="nutrient-form">
+                            <input type="text" class="calc-input" id="nutrientMeal" placeholder="Meal name (e.g. Grilled salmon + veggies)">
+                            <div class="score-selector">
+                                <label>Nutrient Score:</label>
+                                <div class="score-dots" id="scoreDots">
+                                    <button class="score-dot" data-score="1">1</button>
+                                    <button class="score-dot" data-score="2">2</button>
+                                    <button class="score-dot" data-score="3">3</button>
+                                    <button class="score-dot" data-score="4">4</button>
+                                    <button class="score-dot" data-score="5">5</button>
+                                    <button class="score-dot" data-score="6">6</button>
+                                    <button class="score-dot" data-score="7">7</button>
+                                    <button class="score-dot" data-score="8">8</button>
+                                    <button class="score-dot" data-score="9">9</button>
+                                    <button class="score-dot" data-score="10">10</button>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary btn-sm" id="logNutrient">Log Meal</button>
+                        </div>
+                        <div class="nutrient-avg">
+                            Weekly Average: <strong id="nutrientAvg">—</strong>/10
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== STOICMIND (STOIC RESILIENCE) ========== -->
+    <section class="section section-stoicmind" id="stoicmind">
+        <div class="section-bg-accent stoicmind-accent"></div>
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">🧘 Module 06</span>
+                <h2 class="section-title">Stoic<span class="gradient-text-purple">Mind</span></h2>
+                <p class="section-desc">Build unshakable mental resilience through Stoic philosophy, vagus nerve activation, and stress inoculation techniques.</p>
+            </div>
+
+            <div class="stoic-layout">
+                <!-- Box Breathing Timer -->
+                <div class="breathing-timer glass-card reveal">
+                    <h3>🫁 Box Breathing</h3>
+                    <p>Activates the vagus nerve, reduces cortisol, and triggers calm.</p>
+                    <div class="breath-visual">
+                        <div class="breath-box" id="breathBox">
+                            <div class="breath-ball" id="breathBall"></div>
+                        </div>
+                        <span class="breath-phase" id="breathPhase">Ready</span>
+                        <span class="breath-counter" id="breathCounter">4</span>
+                    </div>
+                    <div class="breath-controls">
+                        <button class="btn btn-primary btn-sm" id="breathStart">▶ Start</button>
+                        <button class="btn btn-outline btn-sm" id="breathStop">⏹ Stop</button>
+                    </div>
+                    <p class="breath-tip">4 seconds inhale → 4 hold → 4 exhale → 4 hold</p>
+                </div>
+
+                <!-- Vagus Nerve Exercises -->
+                <div class="vagus-exercises">
+                    <div class="glass-card reveal" data-delay="100">
+                        <div class="card-icon purple">🧊</div>
+                        <h3>Cold Exposure</h3>
+                        <p>End showers with 30-60 sec cold water. Activates vagus nerve, boosts norepinephrine 200-300%, builds stress resilience.</p>
+                        <div class="card-tag">Hormesis</div>
+                    </div>
+                    <div class="glass-card reveal" data-delay="200">
+                        <div class="card-icon purple">🎵</div>
+                        <h3>Humming & Chanting</h3>
+                        <p>Hum deeply for 5 min. Vibrations stimulate vagus nerve directly through throat. OM chanting shown to reduce anxiety 40%.</p>
+                        <div class="card-tag">Vagal Tone</div>
+                    </div>
+                    <div class="glass-card reveal" data-delay="300">
+                        <div class="card-icon purple">❄️</div>
+                        <h3>Physiological Sigh</h3>
+                        <p>Double inhale through nose, long exhale through mouth. Fastest known method to calm the nervous system in real-time.</p>
+                        <div class="card-tag">Instant Calm</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Negative Visualization -->
+            <div class="negative-viz glass-card reveal">
+                <h3>🪞 Negative Visualization (Premeditatio Malorum)</h3>
+                <p class="viz-desc">Visualize the worst-case scenario to build gratitude and eliminate fear. Practice daily.</p>
+                <div class="viz-prompt" id="vizPrompt">
+                    <blockquote>"What if I lost everything tomorrow? What truly matters?"</blockquote>
+                </div>
+                <button class="btn btn-outline btn-sm" id="newPrompt">↻ New Prompt</button>
+            </div>
+
+            <!-- Resilience Logger -->
+            <div class="resilience-logger glass-card reveal">
+                <h3>📊 Daily Resilience Log</h3>
+                <div class="resilience-form">
+                    <input type="text" class="calc-input" id="stressorInput" placeholder="What stressed you today?">
+                    <div class="rating-row">
+                        <label>Stress level (1-10):</label>
+                        <input type="range" id="stressRating" min="1" max="10" value="5" class="stress-slider">
+                        <span id="stressVal">5</span>
+                    </div>
+                    <select class="calc-input" id="copingTechnique">
+                        <option value="">Coping technique used...</option>
+                        <option value="Breathing">Box Breathing</option>
+                        <option value="Cold Exposure">Cold Exposure</option>
+                        <option value="Journaling">Journaling</option>
+                        <option value="Exercise">Exercise</option>
+                        <option value="Meditation">Meditation</option>
+                        <option value="None">None / Unresolved</option>
+                    </select>
+                    <button class="btn btn-primary btn-sm" id="logResilience">Log Entry</button>
+                </div>
+                <div class="resilience-entries" id="resilienceEntries">
+                    <p class="calc-hint">No entries yet — start logging to track your growth</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== DIGICLEAN (DIGITAL HYGIENE) ========== -->
+    <section class="section section-digiclean" id="digiclean">
+        <div class="section-bg-accent digiclean-accent"></div>
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">📵 Module 07</span>
+                <h2 class="section-title">Digi<span class="gradient-text-cyan">Clean</span></h2>
+                <p class="section-desc">Reclaim your attention and dopamine system. Track screen time, schedule detox sessions, and rebuild deep focus capacity.</p>
+            </div>
+
+            <div class="digi-layout">
+                <!-- Screen Time Logger -->
+                <div class="screentime-logger glass-card reveal">
+                    <h3>📊 Screen Time Tracker</h3>
+                    <div class="screen-chart-wrap">
+                        <canvas id="screenChart" width="400" height="200"></canvas>
+                    </div>
+                    <div class="screen-log-form">
+                        <input type="number" class="calc-input" id="screenHours" placeholder="Hours today" min="0" max="24" step="0.5">
+                        <select class="calc-input" id="screenCategory">
+                            <option value="Social Media">Social Media</option>
+                            <option value="Work/Study">Work / Study</option>
+                            <option value="Entertainment">Entertainment</option>
+                            <option value="Gaming">Gaming</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <button class="btn btn-primary btn-sm" id="logScreenTime">Log Today</button>
+                    </div>
+                </div>
+
+                <!-- Dopamine Detox & Focus -->
+                <div class="detox-section">
+                    <!-- Dopamine Detox Scheduler -->
+                    <div class="glass-card reveal" data-delay="100">
+                        <h3>🧹 Dopamine Detox Planner</h3>
+                        <p>Schedule detox sessions — no phone, social media, or instant gratification.</p>
+                        <div class="detox-schedule-form">
+                            <select class="calc-input" id="detoxType">
+                                <option value="Full Day">Full Day Detox</option>
+                                <option value="Half Day">Half Day (Morning)</option>
+                                <option value="Evening">Evening Only</option>
+                                <option value="Weekend">Weekend Reset</option>
+                            </select>
+                            <button class="btn btn-primary btn-sm btn-full" id="scheduleDetox">Schedule Next Detox</button>
+                        </div>
+                        <div class="detox-list" id="detoxList">
+                            <p class="calc-hint">No detox sessions scheduled yet</p>
+                        </div>
+                    </div>
+
+                    <!-- Attention Span Challenge -->
+                    <div class="glass-card reveal" data-delay="200">
+                        <h3>🎯 Focus Challenge</h3>
+                        <p>Progressive deep focus training. No phone, no distractions.</p>
+                        <div class="focus-levels">
+                            <button class="focus-level-btn" data-minutes="5">5 min</button>
+                            <button class="focus-level-btn" data-minutes="10">10 min</button>
+                            <button class="focus-level-btn active" data-minutes="20">20 min</button>
+                            <button class="focus-level-btn" data-minutes="30">30 min</button>
+                            <button class="focus-level-btn" data-minutes="60">60 min</button>
+                        </div>
+                        <div class="focus-display">
+                            <span class="focus-time" id="focusTime">20:00</span>
+                        </div>
+                        <div class="focus-controls">
+                            <button class="btn btn-primary btn-sm" id="focusStart">▶ Begin Challenge</button>
+                            <button class="btn btn-outline btn-sm" id="focusReset">↺ Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Digital Detox Tips -->
+            <div class="detox-tips reveal">
+                <div class="glass-card">
+                    <div class="card-icon cyan">📵</div>
+                    <h3>No Phone First Hour</h3>
+                    <p>Avoid checking your phone for the first 60 min after waking. Protects your morning cortisol spike for productive use.</p>
+                </div>
+                <div class="glass-card">
+                    <div class="card-icon cyan">🔔</div>
+                    <h3>Notification Audit</h3>
+                    <p>Disable all non-essential notifications. Keep only calls and messages from real humans. Batch-check everything else 2x/day.</p>
+                </div>
+                <div class="glass-card">
+                    <div class="card-icon cyan">🌑</div>
+                    <h3>Grayscale Mode</h3>
+                    <p>Set phone display to grayscale. Removes color-driven dopamine triggers. Makes social media 70% less addictive.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <span class="logo-icon">⚡</span>Glow<span class="logo-accent">Up</span>
+                    <p>Your all-in-one personality development platform. Built with ❤️ for self-improvement enthusiasts.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Core Modules</h4>
+                    <a href="#faceglow">FaceGlow</a>
+                    <a href="#sleepsync">SleepSync</a>
+                    <a href="#brainboost">BrainBoost</a>
+                    <a href="#ironforge">IronForge</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Advanced</h4>
+                    <a href="#metahack">MetaHack</a>
+                    <a href="#stoicmind">StoicMind</a>
+                    <a href="#digiclean">DigiClean</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 GlowUp. Become your best version.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js?v=2"></script>
+</body>
+</html>
